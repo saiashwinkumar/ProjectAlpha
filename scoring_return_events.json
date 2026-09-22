@@ -1,0 +1,14 @@
+[
+  {
+    "ticker": "DAY",
+    "week_date": "2026-01-28",
+    "next_week_date": "2026-02-04",
+    "event_date": "2026-02-04",
+    "event_type": "cash_acquisition",
+    "cash_per_share": 70.0,
+    "start_close": 69.36,
+    "start_close_source": "SP500_Historical_Data.csv: DAY,2026-01-28; Close equals Adj Close",
+    "source_url": "https://www.dayforce.com/who-we-are/newsroom/thoma-bravo-completes-acquisition-of-dayforce",
+    "note": "Use the cash entitlement at completion as terminal value. Used only for raw portfolio performance, not to fill normalized ML labels."
+  }
+]

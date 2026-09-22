@@ -1,0 +1,24 @@
+# Tested with Python 3.13. Exact model-library versions preserve saved fits.
+numpy>=2.0,<3.0
+pandas>=2.2,<3.0
+pyarrow>=16,<20
+scipy>=1.13,<2.0
+scikit-learn==1.9.0
+xgboost==3.4.1
+lightgbm==4.7.0
+joblib>=1.4,<2.0
+threadpoolctl>=3.5,<4.0
+
+# Historical features, AWS storage and retained Kafka prototypes
+pandas_market_calendars==5.4.0
+yfinance>=0.2.66,<1.0
+boto3>=1.36,<2.0
+kafka-python==2.2.16
+s3fs>=2024.6
+
+# Results notebooks and tests
+matplotlib>=3.9,<4.0
+ipython>=8.0
+ipykernel>=6.0
+jupyterlab>=4.0,<5.0
+pytest>=8.0,<9.0

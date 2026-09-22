@@ -1,0 +1,45 @@
+{
+  "base_parameters": {
+    "estimator": "XGBRegressor",
+    "objective": "reg:squarederror",
+    "tree_method": "hist",
+    "device": "cpu",
+    "random_state": 42,
+    "n_jobs": 1,
+    "colsample_bytree": 0.8,
+    "learning_rate": 0.025,
+    "max_depth": 3,
+    "min_child_weight": 10,
+    "n_estimators": 50,
+    "subsample": 0.8
+  },
+  "reg_lambda": "Unspecified: original XGBoost default 1",
+  "rolling_weeks": 260,
+  "ensemble_seeds": [
+    42
+  ],
+  "challengers": [
+    {
+      "max_depth": 2
+    },
+    {
+      "min_child_weight": 20
+    },
+    {
+      "reg_lambda": 2.0
+    }
+  ],
+  "selection": {
+    "folds": 4,
+    "gap_weeks": 1,
+    "cost_bps": 5,
+    "min_ir_gain": 0.1,
+    "min_annual_net_active_gain": 0.005,
+    "min_fold_ir_wins": 3,
+    "max_fold_ir_loss": 0.25,
+    "block_bootstrap_weeks": 4,
+    "bootstrap_replicates": 500,
+    "required_gain_10th_percentile": "> 0"
+  },
+  "note": "Each challenger changes one parameter. The reported result uses dated choices, not one globally tuned parameter set."
+}

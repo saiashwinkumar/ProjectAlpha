@@ -1,0 +1,45 @@
+{
+  "xgboost": {
+    "best_params": {
+      "colsample_bytree": 0.8,
+      "learning_rate": 0.025,
+      "max_depth": 3,
+      "min_child_weight": 10,
+      "n_estimators": 50,
+      "subsample": 0.8
+    },
+    "source": "continuous_260w_v1/regression/as_of=2022-01-05/metadata.json"
+  },
+  "lightgbm": {
+    "best_params": {
+      "objective": "lambdarank",
+      "metric": "None",
+      "boosting_type": "gbdt",
+      "n_estimators": 22,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.0,
+      "label_gain": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "lambdarank_norm": true,
+      "lambdarank_truncation_level": 30,
+      "n_jobs": 1,
+      "random_state": 42,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true,
+      "num_leaves": 31,
+      "max_depth": 5,
+      "min_child_samples": 300,
+      "reg_lambda": 1.0
+    },
+    "source": "continuous_260w_v2/lightgbm/as_of=2022-01-05/metadata.json"
+  }
+}

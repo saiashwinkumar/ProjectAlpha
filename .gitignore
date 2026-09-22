@@ -1,0 +1,32 @@
+# Local environments, caches and editor state
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+
+# Research inputs, fitted models and generated training output stay local/S3.
+/artifacts/
+/local_cache/
+/data/
+/feature_test/
+/feature_runs/
+/sp500_features/
+/catboost_info/
+/.local_archive/
+/SP500_Historical_Data.csv
+/indexProcessed.csv
+*.pkl
+*.joblib
+*.log

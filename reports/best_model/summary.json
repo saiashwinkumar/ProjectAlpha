@@ -1,0 +1,41 @@
+{
+  "model": "XGBoost regression with protected chronological selection",
+  "score_start": "2022-01-05",
+  "last_realized_score_date": "2026-02-11",
+  "data_available_through": "2026-02-18",
+  "window_weeks": 260,
+  "cost_bps_per_dollar_traded": 5,
+  "seed": 42,
+  "selected_challenger_dates": 14,
+  "configuration_counts": {
+    "incumbent": 202,
+    "larger_child": 5,
+    "shallower_depth": 5,
+    "stronger_l2": 4
+  },
+  "metrics": {
+    "return_weeks": 215,
+    "annualized_stock_return": 0.182049434842646,
+    "annualized_net_stock_return": 0.1551933200300683,
+    "annualized_active_return": 0.0662588745685585,
+    "net_active_return": 0.0394027597559808,
+    "active_ir": 0.6317559382248801,
+    "net_cumulative_active_return": 0.1629152566833824,
+    "q1_capture": 0.2449427108846786,
+    "rank_ic": 0.0101631219198467,
+    "ndcg_at_50": 0.5097491499769287,
+    "turnover": 0.51653718580821,
+    "annualized_transaction_cost": 0.0268561148125777,
+    "total_transaction_cost": 0.1110397054750809,
+    "max_drawdown": -0.1925087078410579,
+    "net_stock_cagr": 0.1466435791830622
+  },
+  "definitions": {
+    "annualized_returns": "52 times mean weekly return",
+    "active_return": "Stock return minus contemporaneous sector mean return",
+    "active_ir": "sqrt(52) times mean net active return / sample std",
+    "turnover": "Half the sum of absolute weekly target-weight changes",
+    "cost": "0.0005 times sum of absolute target-weight changes; initial entry charged",
+    "drawdown": "Maximum drawdown of compounded net stock returns"
+  }
+}
